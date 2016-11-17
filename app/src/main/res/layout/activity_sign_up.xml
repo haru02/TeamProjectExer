@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fcteam6project.rxjavaex01.SignUp.SignUpActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:id="@+id/editTextId"
+        android:hint="E-mail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editTextId"
+        android:layout_alignRight="@+id/editTextId"
+        android:layout_alignEnd="@+id/editTextId"
+        android:layout_marginTop="18dp"
+        android:id="@+id/editTextPassword"
+        android:hint="Password" />
+
+    <CheckBox
+        android:text="여"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxMale"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword" />
+
+    <CheckBox
+        android:text="여"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxFemale"
+        android:layout_alignBaseline="@+id/checkBoxMale"
+        android:layout_alignBottom="@+id/checkBoxMale"
+        android:layout_alignRight="@+id/editTextPassword"
+        android:layout_alignEnd="@+id/editTextPassword" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/checkBoxMale"
+        android:layout_alignLeft="@+id/checkBoxMale"
+        android:layout_alignStart="@+id/checkBoxMale"
+        android:layout_marginTop="44dp"
+        android:layout_alignRight="@+id/checkBoxFemale"
+        android:layout_alignEnd="@+id/checkBoxFemale"
+        android:id="@+id/exListYear" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageViewClose" />
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewClose"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonSignUpSave" />
+
+
+</RelativeLayout>
